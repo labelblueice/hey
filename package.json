@@ -1,0 +1,12 @@
+{
+  "name": "bhuwan-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && mkdir -p dist && cp -r index.html src dist",
+    "dev": "npx serve ."
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
