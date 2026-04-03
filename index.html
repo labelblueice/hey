@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhuwan | Portfolio</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Bhuwan</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Hi, I’m Bhuwan</h1>
+        <p>Full-stack developer creating fast, accessible web experiences.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I build modern web applications with TypeScript, React, and Node.js.
+          I care about clean UI, performance, and great developer experience.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Project One</h3>
+            <p>Short description of the project and your role.</p>
+            <a href="#" class="link">View</a>
+          </div>
+          <div class="card">
+            <h3>Project Two</h3>
+            <p>Short description of the project and your role.</p>
+            <a href="#" class="link">View</a>
+          </div>
+          <div class="card">
+            <h3>Project Three</h3>
+            <p>Short description of the project and your role.</p>
+            <a href="#" class="link">View</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form id="contactForm" class="form">
+          <input name="name" placeholder="Your Name" required />
+          <input name="email" type="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+          <p id="formStatus" class="status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 Bhuwan. All rights reserved.</footer>
+
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
